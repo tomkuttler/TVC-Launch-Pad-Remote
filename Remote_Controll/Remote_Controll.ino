@@ -13,6 +13,35 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // Save the button value of button 1 to a variable, 1 = not pressed, 0 = pressed
+  int button1Val = digitalRead(3);
 
+  // Save the button value of button 2 to a variable, 1 = not pressed, 0 = pressed
+  int button2Val = digitalRead(4);
+
+  // Button 1 is the start countdown button
+  if(button1Val == HIGH) {  // If Button 1 is not pressed
+    digitalWrite(13, LOW);  // Turn off LED
+  }
+  else {                    // Else Button 1 is pressed
+    digitalWrite(13, HIGH); // Turn on LED
+
+    Serial1.print("1");     // HC-12 sends "1"
+
+    delay(1000);
+  }
+
+  // Button 2 is the abort button
+  if(button2Val == HIGH) {  // If Button 2 is not pressed
+    digitalWrite(13, LOW);  // Turn off LED
+  }
+  else {                    // Else Button 2 is pressed
+    digitalWrite(13, HIGH); // Turn on LED
+
+    Serial1.print("2");     // HC-12 sends "2"
+
+    delay(1000);
+  }
+
+  delay(20);
 }
