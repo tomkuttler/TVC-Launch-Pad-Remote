@@ -1,3 +1,16 @@
+/*
+ * Remote Controll Code
+ * 
+ * This is the source code for a remote control for a model rocket launch pad.
+ * It uses an Arduino Nano Every microcontroller, an HC-12 radio module, and two buttons.
+ * 
+ * This version 1.0 was used for the first test flight of the rocket on Sep 03 2022.
+ * 
+ * @version 1.0
+ * @author Tom Kuttler
+ * @GitHub https://github.com/tomkuttler/TVC-Launch-Pad-Remote
+ */
+
 void setup() {
   // Begin serial communication to HC-12
   Serial1.begin(9600);
