@@ -36,7 +36,7 @@ To use this software, you will need an Arduino Nano Every (or similar Arduino) a
 
 ## Wiring Diagram
 
-![Wiring Diagram]()
+![Wiring Diagram](https://github.com/tomkuttler/TVC-Launch-Pad-Remote/blob/main/Wiring%20Diagram.png)
 
 ## Contributing
 
